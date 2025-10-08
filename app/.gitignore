@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+myenv/
+.env/
+alembic/
+
+alembic/__pycache__/
+
+# Logs
+*.log
