@@ -27,6 +27,13 @@ def create_todo(db: Session, todo: schemas.ToDoCreate, user_id: int):
     db.refresh(db_todo)
     return db_todo
 
+
+
+
+
+
+
+
 def get_todos_for_user(db: Session, user_id: int):
     return db.query(models.ToDo).filter(models.ToDo.owner_id == user_id).all()
 

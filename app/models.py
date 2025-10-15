@@ -63,7 +63,7 @@ class ToDo(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, nullable=False)
     description = Column(String, nullable=True)
-    completed = Column(Boolean, default=False)
+    completed = Column(Boolean, default=True)
     owner_id = Column(Integer, ForeignKey("users.id"))
 
     owner = relationship("User", back_populates="todos")
